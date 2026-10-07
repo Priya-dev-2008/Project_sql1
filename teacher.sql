@@ -1,0 +1,10 @@
+CREATE DATABASE Product;
+USE Product;
+SHOW TABLES;
+SELECT * FROM superstore;
+RENAME TABLE superstore to store;
+SELECT * FROM store;
+SELECT * FROM store WHERE Segment = "Corporate";
+SELECT category , SUM(total_sales) AS sales FROM superstore GROUP BY category; 
+SELECT COUNT(*) AS TOTAL_ROWS_COUNT FROM store;
+SELECT DISTINCT Region AS CUST_CONTRY FROM store;
